@@ -1,6 +1,6 @@
 body {
 	-webkit-font-smoothing: antialiased;
-	cursor: crosshair;
+	a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
 	background: url(../backgroundmain.jpg) no-repeat;
 	background-color: #000000;
 	margin: 0;
