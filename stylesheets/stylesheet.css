@@ -8,4 +8,6 @@ body {
   border: 0;
   font: inherit;
   vertical-align: baseline;
+  height: 1000px;
+  width: 1080px;
 }
