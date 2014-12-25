@@ -1,8 +1,8 @@
 body {
+	-webkit-font-smoothing: antialiased;
 	cursor: crosshair;
-	background-image: url("backgroundmain.jpg");
+	background: url(../backgroundmain.jpg) no-repeat;
 	background-color: #000000;
-	background-repeat: no-repeat;
 	margin: 0;
   padding: 0;
   border: 0;
