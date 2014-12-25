@@ -1,13 +1,13 @@
 body {
 	-webkit-font-smoothing: antialiased;
 	cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
-	background: url(../backgroundmain.jpg) no-repeat;
+	background: url(../backgroundmain.png) no-repeat;
 	background-color: #000000;
 	margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
   vertical-align: baseline;
-  height: 1000px;
-  width: 1080px;
+ 
+  width: 1899px;
 }
