@@ -1,4 +1,6 @@
 body {
+	cursor:crosshair;
+	background-image: url("backgroundmain.jpg");
 	background-color: #000000;
-	cursor: crosshair;
+	background-repeat: no-repeat;
 }
