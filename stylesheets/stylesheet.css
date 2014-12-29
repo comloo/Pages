@@ -1,13 +1,79 @@
 body {
-	-webkit-font-smoothing: antialiased;
-	cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
-	background: url(../backgroundmain.png) no-repeat;
-	background-color: #000000;
-	margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
- 
-  width: 1899px;
+    -webkit-font-smoothing: antialiased;
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
+    background: url(https://raw.githubusercontent.com/comloo/Pages/gh-pages/backgroundmain.png) no-repeat;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    height: auto;
+    width: 1899px;
+}
+#about {
+    background-color:black;
+    text-align: center;
+    margin-top: 950px;
+    height: 420px;
+    padding: 20px;
+}
+#projects {
+    background-color:#262626;
+    margin: 0px;
+    height: auto;
+    text-align: center;
+}
+h1 {
+    color: red;
+    font-family: sans-serif;
+    text-align: center;
+}
+.title {
+    width: 450px;
+    height: 320px;
+    background-color: red;
+    padding: 0px;
+    margin: 0px;
+    <!-- padding-bottom: 0.41em;
+    margin: 0 20px !important;
+    border-bottom: 1px solid #red;
+    --> text-align: center;
+    color: white;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.description {
+    color: white;
+    display: inline-block;
+    width: 1400px;
+    <!-- margin: 20px 1%;
+    --> height: 320px;
+    background-size: cover;
+    background-position: center center;
+}
+.description#monopoly {
+    background-image: url("http://www.bademarine.com/boats4sale/assets/images/catico/boat-1.png");
+    background-color: green;
+}
+.description .text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    height: 320px;
+    <!-- padding: 20px;
+    --> opacity: 0;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+    <!-- z-index: -1;
+    -->
+}
+p {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
 }
