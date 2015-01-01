@@ -2,44 +2,63 @@ body {
     -webkit-font-smoothing: antialiased;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
     background: url(http://fc01.deviantart.net/fs71/f/2014/362/f/c/background3_by_comloo-d8bnfmt.gif) no-repeat;
-    background-color: #000000;
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
+    <!-- font: inherit;
     vertical-align: baseline;
-    height: auto;
+    --> height: auto;
     width: 1899px;
 }
 #about {
-    background-color:black;
+    background-color:white;
     text-align: center;
-    margin-top: 950px;
-    height: 420px;
+    margin-top: 0px;
+    height: auto;
     padding: 20px;
 }
 #projects {
-    background-color:#262626;
-    margin: 0px;
+    background-color:#fdfdfd;
     height: auto;
     text-align: center;
 }
+#gallery {
+    background-color:white;
+    height: auto;
+    text-align: center;
+}
+#footer {
+    background-color: #fdfdfd;
+    height: auto;
+        padding: 110px 270px;
+
+}
 h1 {
-    color: red;
+    color: #b39eaa;
     font-family: sans-serif;
     text-align: center;
+}
+h2 {
+    color: #b39eaa;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 30px;
+    padding-bottom: 10px;
+}
+h3 {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top:9px;
 }
 .title {
     width: 450px;
     height: 320px;
-    background-color: red;
-    padding: 0px;
-    margin: 0px;
+    background-color: #fdfdfd;
+    margin: -25px;
     <!-- padding-bottom: 0.41em;
     margin: 0 20px !important;
     border-bottom: 1px solid #red;
     --> text-align: center;
-    color: white;
 }
 .right {
     float: right;
@@ -53,27 +72,136 @@ h1 {
     width: 1400px;
     <!-- margin: 20px 1%;
     --> height: 320px;
+    margin-top: 0px;
     background-size: cover;
     background-position: center center;
 }
 .description#monopoly {
-    background-image: url("http://www.bademarine.com/boats4sale/assets/images/catico/boat-1.png");
-    background-color: green;
-}
-.description .text {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
+    background-image: url("http://fc04.deviantart.net/fs71/f/2014/363/b/c/monopoly_by_comloo-d8brb1z.png");
     height: 320px;
+}
+#monopoly:hover {
+    background-image: url("http://fc02.deviantart.net/fs70/f/2014/363/5/e/plat_engine_by_comloo-d8brcmu.png");
+}
+.description:hover {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.description:hover, .description:focus, .description:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.description#platengine {
+    background-image: url("http://fc02.deviantart.net/fs70/f/2014/363/5/e/plat_engine_by_comloo-d8brcmu.png");
+    height: 320px;
+}
+.description#website {
+    background-image: url("http://fc05.deviantart.net/fs71/f/2014/363/b/e/thisweb_by_comloo-d8brdej.png");
+    height: 320px;
+}
+<!--.description .text {
+    <!-- background-color: rgba(0, 0, 0, 0.75);
+    --> color: white;
+    height: 320px;
+    margin-top: 0px;
     <!-- padding: 20px;
-    --> opacity: 0;
     -webkit-transition: opacity 0.1s ease-in-out;
     -moz-transition: opacity 0.1s ease-in-out;
     transition: opacity 0.1s ease-in-out;
     <!-- z-index: -1;
-    -->
 }
-p {
-    color: white;
+.description:hover .text {
+    opacity: 1 !important;
+}
+--> p {
+    color: black;
     text-align: center;
     font-family: sans-serif;
+}
+button {
+    background-color: #b39eaa;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #f1d1bf;
+}
+ol {
+    list-style: none;
+}
+#sidebar li {
+    padding-bottom: 10px;
+}
+#sidebar {
+    z-index: 2000;
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    margin-top: -40px;
+    margin-left: 0px;
+    padding: none;
+}
+.text {
+      z-index: 2000;
+    position: fixed;
+    top: 50%;
+    right: 55px;
+    
+    padding: 3px 20px;
+    background: #b39eaa;
+	display: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.one {
+    margin-top: -36px;  
+}
+.two {
+    margin-top: -10px;
+}
+.three {
+    margin-top: 20px;
+}
+#aboutlink:hover + .text, #projlink:hover + .text, #gallerylink:hover + .text {
+    display: block;
+    
+}
+
+#footer .leftcol {
+    text-align: left;
+    height: auto;
+    width: 400px;
+    display:inline-block;
+    float: left;
+}
+#footer .midcol {
+    display: inline-block;
+    height: auto;
+    width: 400px;
+    margin-left: 65px;
+}
+#footer .midcol li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 20px 0;
+    
+}
+#footer .rightcol {
+    text-align: right;
+    height: auto;
+    width: 400px;
+    display: inline-block;
+    float: right;
+    margin-top: 55px;
 }
