@@ -133,6 +133,7 @@ button {
     font-size: 12px;
     font-weight: normal;
     margin-top: 20px;
+    cursor: crosshair;
 }
 button:hover {
     background-color: #f1d1bf;
@@ -163,6 +164,9 @@ ol {
 	display: none;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     
+}
+img {
+    cursor: crosshair;
 }
 .one {
     margin-top: -36px;  
@@ -204,4 +208,16 @@ ol {
     display: inline-block;
     float: right;
     margin-top: 55px;
+}
+#footer img{
+     opacity: 1.0;
+ transition: opacity 1s ease-in-out;
+ -moz-transition: opacity 1s ease-in-out;
+ -webkit-transition: opacity 1s ease-in-out;
+}
+#footer a:hover img{
+    opacity: .6;
+ transition: opacity .35s ease-in-out;
+ -moz-transition: opacity .35s ease-in-out;
+ -webkit-transition: opacity .35s ease-in-out;
 }
