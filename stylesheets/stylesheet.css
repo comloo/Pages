@@ -1,20 +1,19 @@
 @font-face {
-    font-family: "Calluna";
+    font-family:"Calluna";
     src: url("http://wendyfu.com/Calluna-Regular.otf");
 }
 @font-face {
-  font-family: 'Droid Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family:'Droid Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-
 body {
     -webkit-font-smoothing: antialiased;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
     background: url(http://fc01.deviantart.net/fs71/f/2014/362/f/c/background3_by_comloo-d8bnfmt.gif) no-repeat;
-    font-family: 'Droid Serif', serif;
+    font-family:'Droid Serif', serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -43,12 +42,11 @@ body {
 #footer {
     background-color: #fdfdfd;
     height: auto;
-        padding: 110px 270px;
-
+    padding: 110px 270px;
 }
 h1 {
     color: #b39eaa;
-    font-family: 'Calluna';
+    font-family:'Calluna';
     text-align: center;
 }
 h2 {
@@ -94,7 +92,18 @@ h3 {
     height: 320px;
 }
 #monopoly:hover {
+    background-image: url("http://fc06.deviantart.net/fs71/f/2015/021/e/0/monopolyover_by_comloo-d8etm73.png");
+}
+.description#platengine {
     background-image: url("http://fc02.deviantart.net/fs70/f/2014/363/5/e/plat_engine_by_comloo-d8brcmu.png");
+    height: 320px;
+}
+#platengine:hover {
+    background-image: url("http://fc09.deviantart.net/fs71/f/2015/021/e/6/plat_engine_over_by_comloo-d8etoz7.png");
+}
+.description#website {
+    background-image: url("http://fc05.deviantart.net/fs71/f/2014/363/b/e/thisweb_by_comloo-d8brdej.png");
+    height: 320px;
 }
 .description:hover {
     -webkit-transition-duration: 0.3s;
@@ -109,33 +118,10 @@ h3 {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.description#platengine {
-    background-image: url("http://fc02.deviantart.net/fs70/f/2014/363/5/e/plat_engine_by_comloo-d8brcmu.png");
-    height: 320px;
-}
-.description#website {
-    background-image: url("http://fc05.deviantart.net/fs71/f/2014/363/b/e/thisweb_by_comloo-d8brdej.png");
-    height: 320px;
-}
-<!--.description .text {
-    <!-- background-color: rgba(0, 0, 0, 0.75);
-    --> color: white;
-    height: 320px;
-    margin-top: 0px;
-    <!-- padding: 20px;
-    -webkit-transition: opacity 0.1s ease-in-out;
-    -moz-transition: opacity 0.1s ease-in-out;
-    transition: opacity 0.1s ease-in-out;
-    <!-- z-index: -1;
-}
-.description:hover .text {
-    opacity: 1 !important;
-}
 p {
     color: black;
     text-align: center;
-       font-family: 'Droid Serif', serif;
-
+    font-family:'Droid Serif', serif;
 }
 button {
     background-color: #b39eaa;
@@ -146,11 +132,17 @@ button {
     color: white;
     font-size: 12px;
     font-weight: normal;
-    margin-top: 20px;
+    ;
     cursor: crosshair;
 }
 button:hover {
     background-color: #f1d1bf;
+}
+button:hover span {
+    display: none;
+}
+button:hover:before {
+    content:"Already here!";
 }
 ol {
     list-style: none;
@@ -168,22 +160,20 @@ ol {
     padding: none;
 }
 .text {
-      z-index: 2000;
+    z-index: 2000;
     position: fixed;
     top: 50%;
     right: 55px;
-    
     padding: 3px 20px;
     background: #b39eaa;
-	display: none;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 img {
     cursor: crosshair;
 }
 .one {
-    margin-top: -36px;  
+    margin-top: -36px;
 }
 .two {
     margin-top: -10px;
@@ -191,11 +181,12 @@ img {
 .three {
     margin-top: 20px;
 }
-#aboutlink:hover + .text, #projlink:hover + .text, #gallerylink:hover + .text {
-    display: block;
-    
+.four {
+    margin-top: 43px;
 }
-
+#aboutlink:hover + .text, #projlink:hover + .text, #gallerylink:hover + .text, #contactlink:hover + .text {
+    display: block;
+}
 #footer .leftcol {
     text-align: left;
     height: auto;
@@ -213,25 +204,24 @@ img {
     display: inline-block;
     margin-right: 15px;
     padding: 20px 0;
-    
 }
 #footer .rightcol {
     text-align: right;
     height: auto;
-    width: 400px;
+    width: 410px;
     display: inline-block;
     float: right;
     margin-top: 55px;
 }
-#footer img{
-     opacity: 1.0;
- transition: opacity 1s ease-in-out;
- -moz-transition: opacity 1s ease-in-out;
- -webkit-transition: opacity 1s ease-in-out;
+#footer img {
+    opacity: 1.0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
 }
-#footer a:hover img{
+#footer a:hover img {
     opacity: .6;
- transition: opacity .35s ease-in-out;
- -moz-transition: opacity .35s ease-in-out;
- -webkit-transition: opacity .35s ease-in-out;
+    transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -webkit-transition: opacity .35s ease-in-out;
 }
