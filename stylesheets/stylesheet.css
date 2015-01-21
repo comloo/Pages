@@ -2,12 +2,19 @@
     font-family: "Calluna";
     src: url("http://wendyfu.com/Calluna-Regular.otf");
 }
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 body {
     -webkit-font-smoothing: antialiased;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
     background: url(http://fc01.deviantart.net/fs71/f/2014/362/f/c/background3_by_comloo-d8bnfmt.gif) no-repeat;
-    font-family: 'Calluna';
+    font-family: 'Droid Serif', serif;
     margin: 0;
     padding: 0;
     border: 0;
