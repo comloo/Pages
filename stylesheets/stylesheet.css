@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Calluna";
+    src: url("Calluna-Regular.otf");
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;
     background: url(http://fc01.deviantart.net/fs71/f/2014/362/f/c/background3_by_comloo-d8bnfmt.gif) no-repeat;
+    font-family: 'Calluna';
     margin: 0;
     padding: 0;
     border: 0;
