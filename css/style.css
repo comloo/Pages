@@ -256,6 +256,18 @@ img { max-width: 100%; }
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
+.resume-button {
+  border-color: #f73b56;
+  outline: #f73b56;
+  border-radius: 0px;
+  padding: 10px 40px;
+  background: #ffffff;
+  color: white;
+  margin-left: 130px;
+  margin-right: 100px;
+  text-align: center;
+  transition: all 1s;
+}
 /* Menu Button */
 .menu-button {
   width: 34px;
@@ -289,19 +301,62 @@ img { max-width: 100%; }
 .menu-button span:nth-child(3) {top: 18px;}
 .menu-button:hover {opacity: 0.6;}
 /* Close Button */
-.close-button {
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  right: 1em;
-  top: 1em;
+
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #f73b56;
+  font-size:14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   overflow: hidden;
-  text-indent: 1em;
-  font-size: 0.75em;
-  border: none;
-  background: transparent;
-  color: transparent;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
+
+a.animated-button.thar-three {
+  color: #f73b56;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid #f73b56;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-three:hover {
+  color: #fff !important;
+  background-color: #f73b56;
+  text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+a.animated-button.thar-three:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: '';
+  color: #fff !important;
+  background: #f73b56;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
 .close-button::before,
 .close-button::after {
   content: '';
