@@ -6,6 +6,7 @@ description: Just a sample post to show some of the typography elements supporte
 categories:
 - blog
 permalink: sample-post
+comments: true
 ---
 
 Just a sample post to show some of the *typography* elements supported from 

@@ -1364,3 +1364,16 @@ ul.portfolio-image li .desc{
   background-color: #f73b56;
 
 }
+
+#floating-button{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #db4437;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+  z-index: 10000
+}
