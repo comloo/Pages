@@ -66,5 +66,9 @@
         <!-- Google analytics  -->
         {% include google-analytics.html %}
         <script id="dsq-count-scr" src="//comloo.disqus.com/count.js" async></script>
+
+        {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
     </body>        
 </html>
