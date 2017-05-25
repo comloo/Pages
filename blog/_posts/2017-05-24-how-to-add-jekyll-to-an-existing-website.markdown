@@ -6,6 +6,8 @@ description: Step-by-step guide on integrating a Jekyll hosted blog to your exis
 categories:
 - blog
 - jekyll
+- tutorial
+- website
 comments: true
 ---
 
