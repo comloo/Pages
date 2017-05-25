@@ -1366,10 +1366,7 @@ ul.portfolio-image li .desc{
 }
 
 #floating-button{
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: #db4437;
+  background: #f73b56;
   position: fixed;
   bottom: 30px;
   right: 30px;
