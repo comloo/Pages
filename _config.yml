@@ -47,7 +47,7 @@ markdown:    kramdown
 highlighter: pygments 
 
 # Permalinks
-permalink:        pretty
+permalink: /blog/:title
 
 paginate: 5
 paginate_path: blogs/page:num
