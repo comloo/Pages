@@ -54,6 +54,7 @@ paginate_path: blogs/page:num
 
 gems:
   - jekyll-paginate 
+  - jekyll-sitemap
 
 exclude: 
   - CNAME
